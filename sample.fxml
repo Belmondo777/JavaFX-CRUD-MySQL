@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Controller">
+   <children>
+      <TableView fx:id="tableView_muz" layoutX="14.0" layoutY="14.0" prefHeight="300.0" prefWidth="500.0">
+        <columns>
+          <TableColumn fx:id="tableColumn_id" prefWidth="61.0" text="ID" />
+          <TableColumn fx:id="tableColumn_ime" prefWidth="106.0" text="IME" />
+            <TableColumn fx:id="tableColumn_prezime" prefWidth="124.0" text="PREZIME" />
+            <TableColumn fx:id="tableColumn_godiste" prefWidth="122.0" text="GODISTE" />
+            <TableColumn fx:id="tableColumn_zenaId" prefWidth="86.0" text="ZENA ID" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tf_ime_muza" layoutX="14.0" layoutY="326.0" promptText="Unesi ime muza" />
+      <TextField fx:id="tf_prezime_muza" layoutX="14.0" layoutY="366.0" promptText="Unesi prezime muza" />
+      <TextField fx:id="tf_godiste_muza" layoutX="233.0" layoutY="326.0" promptText="Unesi godiste muza" />
+      <ComboBox fx:id="cb_zena" layoutX="233.0" layoutY="366.0" prefHeight="27.0" prefWidth="167.0" promptText="Zene" />
+      <Button fx:id="btn_dodaj_muza" layoutX="161.0" layoutY="402.0" mnemonicParsing="false" onMouseClicked="#onClick" text="Dodaj muza" />
+      <TextField fx:id="tf_ime_zene" layoutX="14.0" layoutY="466.0" promptText="Unesi ime zene" />
+      <TextField fx:id="tf_godiste_zene" layoutX="233.0" layoutY="466.0" promptText="Unesi godiste zene" />
+      <TextField fx:id="tf_prezime_zene" layoutX="14.0" layoutY="506.0" promptText="Unesi prezime zene" />
+      <Button fx:id="btn_dodaj_zenu" layoutX="163.0" layoutY="544.0" mnemonicParsing="false" onMouseClicked="#onClickZena" text="Dodaj zenu" />
+      <Button fx:id="btn_izbrisi_muza" layoutX="414.0" layoutY="402.0" mnemonicParsing="false" onMouseClicked="#izbrisiMuza" prefHeight="27.0" prefWidth="100.0" text="Izbrisi" textFill="RED" />
+      <TableView fx:id="tv_muz_zena" layoutX="534.0" layoutY="14.0" prefHeight="300.0" prefWidth="657.0">
+        <columns>
+          <TableColumn fx:id="tc_muzId" prefWidth="49.0" text="ID" />
+          <TableColumn fx:id="tc_muzIme" prefWidth="103.0" text="IME" />
+            <TableColumn fx:id="tc_muzPrezime" prefWidth="109.0" text="PREZIME" />
+            <TableColumn fx:id="tc_muzGodiste" prefWidth="67.0" text="GODISTE" />
+            <TableColumn fx:id="tc_muzZena" prefWidth="45.0" text="ZENA" />
+            <TableColumn fx:id="tc_zenaId" prefWidth="39.0" text="ID" />
+            <TableColumn fx:id="tc_zenaIme" prefWidth="81.0" text="IME" />
+            <TableColumn fx:id="tc_zenaPrezime" minWidth="9.0" prefWidth="97.0" text="PREZIME" />
+            <TableColumn fx:id="tc_zenaGodiste" prefWidth="65.0" text="GODISTE" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
